@@ -100,3 +100,9 @@ Diagram ini menjelaskan alur event-driven internal Inventory: pencatatan outbox 
 Tujuannya menunjukkan reliability mechanism agar event processing konsisten dan tahan terhadap kegagalan sementara.
 
 ![Individual Inventory Code Outbox Dispatch](../assets/Individual-Inventory-Code-Outbox-Dispatch.png)
+
+## Individual Work - Inventory Module
+
+### Individual Component Diagram
+
+![Individual Auth Component Diagram](../assets/Individual-Auth-Component-Diagram.png)
