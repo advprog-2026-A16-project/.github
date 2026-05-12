@@ -83,6 +83,12 @@ Tujuannya menunjukkan boundary Inventory terhadap komponen eksternal (API layer,
 
 ![Individual Inventory Container](../assets/Individual-Inventory-Container.png)
 
+### Full Inventory UML Diagram
+Diagram ini merangkum struktur utama modul Inventory dalam bentuk UML class diagram.  
+Tujuannya menunjukkan relasi antar controller, service, repository, DTO, entity, exception, dan komponen event-driven yang membentuk implementasi inventory saat ini.
+
+![Full Inventory UML](../assets/Individual-Inventory-Full-UML.png)
+
 ### Individual Code Diagram 1 - Product CRUD Flow
 Diagram ini menunjukkan struktur kode inti untuk use case CRUD produk: controller -> service -> repository -> entity.  
 Tujuannya menegaskan layering, pemisahan tanggung jawab, dan jalur eksekusi utama saat create/read/update/delete produk.
