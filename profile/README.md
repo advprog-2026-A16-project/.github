@@ -101,7 +101,7 @@ Tujuannya menunjukkan reliability mechanism agar event processing konsisten dan 
 
 ![Individual Inventory Code Outbox Dispatch](../assets/Individual-Inventory-Code-Outbox-Dispatch.png)
 
-## Individual Work - Inventory Module
+## Individual Work - Auth & Profile Module
 
 ### Individual Component Diagram
 
