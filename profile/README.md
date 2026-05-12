@@ -72,3 +72,31 @@ Perubahan ini memang menambah kompleksitas sistem, terutama pada observability, 
 - Retry policy dan dead-letter queue untuk failure handling.
 - Standardisasi observability (log correlation, tracing, metrics).
 - Contract-first API/event schema untuk mencegah breaking integration.
+
+---
+
+## Individual Work - Inventory Module
+
+### Individual Container Diagram (Inventory)
+Diagram ini menurunkan container level group ke fokus modul Inventory.  
+Tujuannya menunjukkan boundary Inventory terhadap komponen eksternal (API layer, database, dan broker) serta alur sinkron dan asinkron yang dipakai.
+
+![Individual Inventory Container](../assets/Individual-Inventory-Container.png)
+
+### Individual Code Diagram 1 - Product CRUD Flow
+Diagram ini menunjukkan struktur kode inti untuk use case CRUD produk: controller -> service -> repository -> entity.  
+Tujuannya menegaskan layering, pemisahan tanggung jawab, dan jalur eksekusi utama saat create/read/update/delete produk.
+
+![Individual Inventory Code Product CRUD](../assets/Individual-Inventory-Code-Product-CRUD.png)
+
+### Individual Code Diagram 2 - Reserve Stock Flow
+Diagram ini memfokuskan alur reserve stock dengan kontrol konkurensi dan validasi invariant stok.  
+Tujuannya memperjelas bagaimana modul Inventory menjaga aturan bisnis `stock >= 0` pada request paralel.
+
+![Individual Inventory Code Reserve Stock](../assets/Individual-Inventory-Code-Reserve-Stock.png)
+
+### Individual Code Diagram 3 - Outbox Dispatch Flow
+Diagram ini menjelaskan alur event-driven internal Inventory: pencatatan outbox event, dispatcher, retry/dead-letter, dan publish ke broker.  
+Tujuannya menunjukkan reliability mechanism agar event processing konsisten dan tahan terhadap kegagalan sementara.
+
+![Individual Inventory Code Outbox Dispatch](../assets/Individual-Inventory-Code-Outbox-Dispatch.png)
