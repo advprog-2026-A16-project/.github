@@ -106,3 +106,13 @@ Tujuannya menunjukkan reliability mechanism agar event processing konsisten dan 
 ### Individual Component Diagram
 
 ![Individual Auth Component Diagram](../assets/Individual-Auth-Component-Diagram.png)
+
+## Individual Work - Wallet & Transaction Module
+
+### Individual Component Diagram
+
+![Individual Wallet Component Diagram](../assets/Individual-Wallet-Component-Diagram.png)
+
+### Individual Code Diagram 1
+
+![Individual Wallet Code Controller & DTO](../assets/Individual-Wallet-Code-Controller-DTO.png)
